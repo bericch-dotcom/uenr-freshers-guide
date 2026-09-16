@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a5c36">
+<title>UENR Freshers Guide 25/26 - PDF Verified Final</title>
+<meta name="description" content="UENR Guide 25/26 verified from official PDF: Regular & Fee-Paying fees, map, contacts, smart calculator. By UA2612947">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui;background:#f6f8f6;color:#111;line-height:1.6}
+.hero{background:#0a5c36;color:#fff;padding:50px 20px;text-align:center;border-bottom:6px solid #f9c80e}
+.hero h1{margin:0;font-size:28px}.hero span{color:#f9c80e}
+.container{max-width:900px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:16px;padding:20px;margin:16px 0;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:10px;font-weight:800}
+.badge-o{background:#0a5c36;color:#fff}.badge-s{background:#f9c80e;color:#000}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid #ddd;padding:9px;text-align:left}th{background:#0a5c36;color:#fff}
+.alert{background:#fff3cd;border:1px solid #ffe69c;padding:10px;border-radius:10px;font-size:11px}
+input,select{width:100%;padding:12px;margin:6px 0 10px 0;border:1px solid #ccc;border-radius:10px;font-size:14px}
+.cta{display:block;background:#0a5c36;color:#fff;text-align:center;padding:14px;border-radius:30px;text-decoration:none;font-weight:800;margin-top:10px}
+.cta-w{background:#25D366}
+details{border:1px solid #eee;border-radius:10px;padding:12px;margin:8px 0;background:#fafafa}summary{font-weight:800;color:#0a5c36;cursor:pointer}
+.footer{background:#111;color:#888;text-align:center;padding:28px;font-size:11px}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>🎓 <span>UENR</span> GUIDE 25/26 FINAL</h1>
+<p><b>PDF Verified • Regular & Fee-Paying • Smart Calculator</b></p>
+<p style="font-size:11px;opacity:.8">Source: 2025/26 PROVISIONAL FEES PDF - Pages 2 & 3 | By Theophilus UA2612947 - Built on Android - Kumasi</p>
+</div>
+
+<div class="container">
+<div class="alert">⚠️ <span class="badge badge-o">OFFICIAL PDF</span> Fees from your uploaded PDF: Page 2 = Regular Ghanaian, Page 3 = Fee-Paying. Confirm via 0352-290390. Not official site.</div>
+
+<div class="card">
+<span class="badge badge-o">OFFICIAL - FROM PDF PAGE 2 & 3</span>
+<h2>💰 Fees 2025/26 - Freshers (Both Types)</h2>
+<h4 style="margin:10px 0 5px 0;color:#0a5c36">A) REGULAR Ghanaian Freshers (Subsidized) - PDF Page 2</h4>
+<table>
+<tr><th>Programme</th><th>GHS</th></tr>
+<tr><td>Agriculture / Geo Science</td><td>3,668.81</td></tr>
+<tr><td>Engineering / Energy / Mines</td><td>3,768.81</td></tr>
+<tr><td>Petroleum Engineering</td><td>4,018.81</td></tr>
+<tr><td>Natural Resources / Fire & Disaster</td><td>3,929.19</td></tr>
+<tr><td>Hospitality Management</td><td>3,929.19</td></tr>
+<tr><td>Arts and Social Sciences</td><td>3,662.55</td></tr>
+<tr><td>Sciences</td><td>3,768.81</td></tr>
+<tr><td>Biological Sciences</td><td>4,268.81</td></tr>
+<tr><td>Medical Laboratory Sciences</td><td>4,368.81</td></tr>
+<tr><td>Nursing</td><td>5,568.81</td></tr>
+<tr><td>Maths / Stats / Actuarial</td><td>3,618.81</td></tr>
+</table>
+
+<h4 style="margin:15px 0 5px 0;color:#0a5c36">B) FEE-PAYING Ghanaian Freshers - PDF Page 3</h4>
+<table>
+<tr><th>Programme</th><th>GHS</th></tr>
+<tr><td>Agriculture / Geo Science</td><td>6,181.39</td></tr>
+<tr><td>Engineering / Energy / Mines</td><td>6,281.39</td></tr>
+<tr><td>Natural Resources</td><td>6,175.13</td></tr>
+<tr><td>Arts and Social Sciences</td><td>6,175.13</td></tr>
+<tr><td>Sciences</td><td>6,281.39</td></tr>
+<tr><td>Biological Sciences</td><td>6,781.39</td></tr>
+<tr><td>Medical Lab Sciences (with Prof Fee)</td><td>6,881.39</td></tr>
+<tr><td>Nursing</td><td>8,081.39</td></tr>
+<tr><td>Maths / Stats / Actuarial</td><td>6,131.39</td></tr>
+</table>
+<p style="font-size:10px;color:#666">Source: UNIVERSITY OF ENERGY AND NATURAL RESOURCES, SUNYANI - PROVISIONAL FEES FOR 2025/26 ACADEMIC YEAR PDF Pages 2-3</p>
+</div>
+
+<div class="card">
+<span class="badge badge-o">OFFICIAL + SMART CALCULATOR - PDF VERIFIED</span>
+<h2>🧮 Smart Calculator - Select Type + Course</h2>
+<p style="font-size:12px">Choose student type first - fee auto-fills from PDF.</p>
+
+<label>1. Student Type</label>
+<select id="type" onchange="loadPrograms()">
+<option value="">-- Choose Type --</option>
+<option value="regular">Regular Ghanaian (Subsidized) - Page 2</option>
+<option value="feepaying">Fee-Paying Ghanaian - Page 3</option>
+</select>
+
+<label>2. Programme</label>
+<select id="prog" onchange="autoFee()">
+<option value="">-- Select Type First --</option>
+</select>
+
+<label>3. Official Fee (Auto from PDF)</label>
+<input type="number" id="fee" readonly style="background:#f0f7f2;font-weight:800" placeholder="Auto fills">
+<label>Hostel per Semester (you type)</label><input type="number" id="hostel" placeholder="e.g. 2500">
+<label>Food per Month</label><input type="number" id="food" placeholder="e.g. 800">
+<label>Other per Month</label><input type="number" id="other" placeholder="e.g. 300">
+<a href="javascript:void(0)" onclick="calc()" class="cta">Calculate Total</a>
+<div id="res" style="display:none;margin-top:12px;background:#0a5c36;color:#fff;padding:14px;border-radius:12px"></div>
+
+<script>
+const fees={
+regular:[
+["Agriculture / Geo Science",3668.81],
+["Engineering / Energy / Mines",3768.81],
+["Petroleum Engineering",4018.81],
+["Natural Resources / Fire",3929.19],
+["Hospitality Management",3929.19],
+["Arts and Social Sciences",3662.55],
+["Sciences",3768.81],
+["Biological Sciences",4268.81],
+["Medical Laboratory Sciences",4368.81],
+["Nursing",5568.81],
+["Maths / Stats / Actuarial",3618.81]
+],
+feepaying:[
+["Agriculture / Geo Science",6181.39],
+["Engineering / Energy / Mines",6281.39],
+["Natural Resources",6175.13],
+["Arts and Social Sciences",6175.13],
+["Sciences",6281.39],
+["Biological Sciences",6781.39],
+["Medical Lab Sciences (100 prof)",6881.39],
+["Nursing",8081.39],
+["Maths / Stats / Actuarial",6131.39]
+]
+};
+function loadPrograms(){
+let t=document.getElementById('type').value;
+let sel=document.getElementById('prog');
+sel.innerHTML='<option value="">-- Choose Programme --</option>';
+if(!t)return;
+fees[t].forEach(f=>{
+let o=document.createElement('option');
+o.value=f[1];o.text=f[0]+' - GHS '+f[1];
+sel.appendChild(o);
+});
+document.getElementById('fee').value='';
+}
+function autoFee(){let v=document.getElementById('prog').value;if(v){document.getElementById('fee').value=v;}}
+function calc(){
+let f=parseFloat(document.getElementById('fee').value)||0;
+if(f==0){alert('Select Type + Programme first!');return;}
+let h=parseFloat(document.getElementById('hostel').value)||0;
+let fd=parseFloat(document.getElementById('food').value)||0;
+let o=parseFloat(document.getElementById('other').value)||0;
+let total=f+h+(fd+o)*4;
+document.getElementById('res').style.display='block';
+document.getElementById('res').innerHTML='<b>Official Fee (PDF):</b> GHS '+f.toFixed(2)+'<br>Hostel: GHS '+h.toFixed(2)+'<br>Living x4: GHS '+((fd+o)*4).toFixed(2)+'<hr style=border:0;border-top:1px solid #ffffff55;margin:8px 0><b style=font-size:17px>Total Semester: GHS '+total.toFixed(2)+'</b><br><span style=font-size:11px>Screenshot for parents!</span>';
+}
+</script>
+</div>
+
+<div class="card">
+<span class="badge badge-o">OFFICIAL GPS BS-0061-2164</span>
+<h2>🗺️ Live Map</h2>
+<iframe src="https://maps.google.com/maps?q=7.34949,-2.3435&z=16&output=embed" width="100%" height="340" style="border:0;border-radius:12px" loading="lazy"></iframe>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:8px">
+<a href="https://maps.google.com/?q=UENR+Sunyani" target="_blank" style="background:#0a5c36;color:#fff;padding:10px;text-align:center;border-radius:10px;font-size:12px;font-weight:700">📍 Sunyani</a>
+<a href="https://maps.google.com/?q=UENR+Dormaa" target="_blank" style="background:#f9c80e;color:#000;padding:10px;text-align:center;border-radius:10px;font-size:12px;font-weight:700">📍 Dormaa</a>
+<a href="https://maps.google.com/?q=UENR+Nsoatre" target="_blank" style="background:#eee;color:#000;padding:10px;text-align:center;border-radius:10px;font-size:12px;font-weight:700">📍 Nsoatre</a>
+</div>
+</div>
+
+<div class="card">
+<span class="badge badge-o">OFFICIAL CONTACTS</span>
+<h2>📞 Tap to Call</h2>
+<table>
+<tr><th>Office</th><th>Call</th></tr>
+<tr><td>Admissions</td><td><a href="tel:+233352290366">0352-290366</a></td></tr>
+<tr><td>Academic</td><td><a href="tel:+233553581475">0553-581475</a></td></tr>
+<tr><td>Registrar</td><td><a href="tel:+233352290390">0352-290390</a></td></tr>
+<tr><td>Hall One</td><td><a href="tel:+233501248184">0501-248184</a></td></tr>
+<tr><td>Hall Two</td><td><a href="tel:+233535465299">0535-465299</a></td></tr>
+<tr><td>Finance eVoucher</td><td><a href="tel:+233246252192">0246-252192</a></td></tr>
+</table>
+</div>
+
+<div class="card">
+<span class="badge badge-s">STUDENT TIPS</span>
+<h2>✅ Checklist & FAQ</h2>
+<code style="display:block;background:#111;color:#0f0;padding:12px;border-radius:10px;font-size:12px">[ ] Admission letter x3<br>[ ] Mattress 3.5x6, Bucket, Blanket<br>[ ] Extension, Medical, 8 pics<br>[ ] Budget screenshot</code>
+<details><summary>Regular vs Fee-Paying difference?</summary><p style="font-size:13px">Regular = subsidized by govt (lower fees Page 2). Fee-Paying = full fees Page 3. Both from same PDF you uploaded.</p></details>
+<a class="cta cta-w" href="https://wa.me/?text=UENR%20FINAL%20PDF%20Verified%20Guide%20https://bericch-dotcom.github.io/uenr-freshers-guide/">Share on WhatsApp</a>
+</div>
+
+</div>
+<div class="footer">FINAL V4 PDF VERIFIED - From your uploaded 2025-2026_PROVISIONAL_FEES PDF<br>Built 100% on Android by UA2612947 | Kumasi<br>bericch-dotcom.github.io/uenr-freshers-guide | Confirm: 0352-290390</div>
+</body>
+</html>
